@@ -5,6 +5,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Chapter2</title>
+    <style>
+      /* General styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      header {
+        background-color: #ff5733;
+        padding: 20px;
+        color: white;
+        text-align: center;
+      }
+
+      header h1 {
+        display: inline-block;
+        margin: 0;
+      }
+
+      header button {
+        background-color: white;
+        color: #ff5733;
+        border: none;
+        padding: 10px 15px;
+        margin-left: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+
+      header button:hover {
+        background-color: #f0f0f0;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      hr {
+        margin-top: 10px;
+        border: 1px solid white;
+      }
+
+      /* Main content styles */
+      main {
+        padding: 20px;
+      }
+
+      p {
+        margin: 10px 0;
+        font-size: 14px;
+      }
+
+      h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      a.follow {
+        color: #ff5733;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a.follow:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        background-color: #ff5733;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+
+      button:hover {
+        background-color: #e64e22;
+      }
+
+      /* Input fields */
+      input[type="text"], input[type="password"] {
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      /* Responsive layout */
+      @media (max-width: 600px) {
+        nav ul li {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        header h1, header button {
+          display: block;
+          text-align: center;
+        }
+
+        header button {
+          margin-top: 10px;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -26,9 +153,9 @@
     <main>
         <p>
         Adam &nbsp;&nbsp;
-        <a class="follow" href="/adam">Follow /abc</a></span>
+        <a class="follow" href="/adam">Follow /abc</a>
         </p>
-        <h3>What is the highest salary for a spacex engineer?</h3>
+        <h3>What is the highest salary for a SpaceX engineer?</h3>
         <span>
             <button>+upvote</button>
             <button>answer</button>
